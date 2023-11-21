@@ -1,7 +1,7 @@
 # Inheritance
 
 
-Inheritance - is a fundamental concept in object-oriented programming (OOP) that allows a class (subclass/child) to inherit properties and behaviors from another class (superclass/parent). It creates an is-a relationship.\
+Inheritance - is a fundamental concept in object-oriented programming (OOP) that allows a class (subclass/child) to inherit properties and behaviors from another class (superclass/parent). It creates an is-a relationship.
 
 ---
 ### Why Inheritance?
@@ -64,10 +64,27 @@ class Subclass extends Superclass {
     }
 }
 ```
-A method cannot be overiden if its declared with the final modifier. 
-
-A method in the parent class can be invoked explicitly using the super reference.
+- A method cannot be overiden if its declared with the final modifier. 
+- A method in the parent class can be invoked explicitly using the super reference.
 
 ### Overloading Methods
 Multiple method with the same name in the same class but with different signatures. 
 It lets you define a similar operation in different ways for different parameters. 
+
+---
+### The Object Class
+
+- Every class in Java is a subclass of the **`Object`** class.
+- If a class doesn't explicitly extend another class, it implicitly inherits from **`Object`**.
+- The **`Object`** class provides basic methods that are common to all Java objects.
+
+A couple of important and common methods of the **Object Class**:
+1. **`toString()`**: Returns a string representation of the object ( name of the object’s class along with some other info )
+2. **`equals(Object obj)`**: Indicates whether some other object is "equal to" this one ( it returns true if two references are aliases )
+
+---
+### The Abstract Class
+- An abstract class cannot be instantiated and may contain abstract methods (methods with only a signature but no body). It is basically a placeholder that represents a generic concept.
+- Unlike an *interface*, the **abstract** modifier must be applied to each abstract method.
+- The child of an abstract class **must** override the abstract methods of the parent.
+- An abstract method can be defined as *final* or *static*.
