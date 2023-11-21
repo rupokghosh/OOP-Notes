@@ -88,3 +88,23 @@ A couple of important and common methods of the **Object Class**:
 - Unlike an *interface*, the **abstract** modifier must be applied to each abstract method.
 - The child of an abstract class **must** override the abstract methods of the parent.
 - An abstract method can be defined as *final* or *static*.
+
+---
+### The Final Keyword
+- **Final Class:**
+    - A final class cannot be extended.
+- **Final Method:**
+    - A final method cannot be overridden by subclasses.
+- **Final Variable:**
+    - A final variable is a constant and cannot be reassigned.
+
+--- 
+### Visibility
+
+Visibility and Inheritance aren’t the best of friends. If private members are inherited, 
+they can be referenced indirectly ( using super )by the child class using its parent’s methods. 
+
+### A few Inheritance design techniques: 
+1. llow each class to manage its own data and use super reference to invoke the parent’s constructor. 
+2. Override methods such as toString and equals with proper definitions. 
+3. Use abstract classes for general concepts that other classes might have in common.
