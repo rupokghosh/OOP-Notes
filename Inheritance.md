@@ -104,7 +104,8 @@ A couple of important and common methods of the **Object Class**:
 Visibility and Inheritance aren’t the best of friends. If private members are inherited, 
 they can be referenced indirectly ( using super )by the child class using its parent’s methods. 
 
+---
 ### A few Inheritance design techniques: 
-1. llow each class to manage its own data and use super reference to invoke the parent’s constructor. 
+1. Allow each class to manage its own data and use super reference to invoke the parent’s constructor. 
 2. Override methods such as toString and equals with proper definitions. 
 3. Use abstract classes for general concepts that other classes might have in common.
