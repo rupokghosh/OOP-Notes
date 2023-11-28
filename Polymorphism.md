@@ -71,3 +71,45 @@ class Circle implements Interface1, Interface2 {
 ```
 
 ---
+### The Comparable Interface
+It contains a single method, **`compareTo(Object obj)`**, which is implemented by the class to provide the ordering logic.
+
+**Implementing Comparable:**
+
+- To make a class objects comparable, the class must implement the **`Comparable`** interface and provide the **`compareTo`** method.
+```java
+public class Person implements Comparable<Person> {
+    private String name;
+    private int age;
+
+    // Constructor, getters, setters...
+
+    @Override
+    public int compareTo(Person otherPerson) {
+        // Compare based on age
+        return Integer.compare(this.age, otherPerson.age);
+    }
+}
+```
+**Sorting Collections:**
+
+- Classes that implement **`Comparable`** can be easily sorted using methods like **`Collections.sort()`**.
+```java
+List<Person> people = new ArrayList<>();
+// Add Person objects to the list
+Collections.sort(people); // Uses the compareTo method for sorting
+```
+
+---
+### The Iterator Interface
+
+The **`Iterator`** interface in Java provides a way to iterate over a collection of objects.
+
+It contains methods like **`boolean hasNext()`, `remove()`** and **`E next()`**.
+
+The methods:
+
+- The **`hasNext()`** method returns a boolean value (**`true`** or **`false`**) indicating whether there are more elements in the iteration. It is typically used in a loop to check if there are more elements before attempting to retrieve the next one.
+- The **`next()`** method returns the next element in the iteration.It advances the iterator to the next position in the collection.
+- The **`remove()`** method removes the last element returned by the **`next()`** method from the underlying collection.
+- The enhanced for loop (also known as the "for-each" loop) provides a concise way to iterate over elements in a collection. The enhanced for loop is read-only; it cannot be used to modify the collection during iteration. It is particularly useful when the order of elements is not critical, such as when iterating through a set or a list where order doesn't matter.
