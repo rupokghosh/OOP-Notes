@@ -27,7 +27,7 @@ class Subclass extends Superclass {
 - Used to call the methods of the superclass.
 - Used to invoke the superclass constructor since constructors are not inherited. 
 
-```
+```java
 class Subclass extends Superclass {
     @Override
     void display() {
@@ -50,7 +50,7 @@ We can, however, use interfaces, which gives us aspects of multiple inheritance 
 A child class can override the definition of an inherited method in favor of its own. 
 It must have the same signature as the parent’s method, but can have a different body. 
 
-```
+```java
 class Superclass {
     void display() {
         System.out.println("i like cricket!");

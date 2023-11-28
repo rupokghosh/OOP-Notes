@@ -5,7 +5,9 @@ All the examples are written with Java.
 
 ---
 ### Notes
+- Objects and Classes ( coming soon )
 - [Inheritance](Inheritance.md)
+- [Polymorphism](Polymorphism.md)
 
 ---
 ### Contributing 
