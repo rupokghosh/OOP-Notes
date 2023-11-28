@@ -18,4 +18,4 @@ new content.
 ---
 ### Licensing
 
-[MIT] (https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit/)
