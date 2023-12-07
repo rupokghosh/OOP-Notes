@@ -8,6 +8,7 @@ All the examples are written with Java.
 - Objects and Classes ( coming soon )
 - [Inheritance](Inheritance.md)
 - [Polymorphism](Polymorphism.md)
+- [Stacks](Stacks.md)
 
 ---
 ### Contributing 
