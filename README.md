@@ -9,6 +9,7 @@ All the examples are written with Java.
 - [Inheritance](Inheritance.md)
 - [Polymorphism](Polymorphism.md)
 - [Stacks](Stacks.md)
+- [Exceptions](Exceptions.md)
 
 ---
 ### Contributing 
